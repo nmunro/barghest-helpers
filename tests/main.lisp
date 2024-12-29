@@ -1,10 +1,10 @@
-(defpackage barghest-helpers/tests/main
+(defpackage barghest/helpers/tests/main
   (:use :cl
-        :barghest-helpers
+        :barghest/helpers
         :rove))
-(in-package :barghest-helpers/tests/main)
+(in-package :barghest/helpers/tests/main)
 
-;; NOTE: To run this test file, execute `(asdf:test-system :barghest-helpers)' in your Lisp.
+;; NOTE: To run this test file, execute `(asdf:test-system :barghest/helpers)' in your Lisp.
 
 (deftest test-target-1
   (testing "should (= 1 1) to be true"

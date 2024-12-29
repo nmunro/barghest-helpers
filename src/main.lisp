@@ -1,4 +1,4 @@
-(defpackage barghest-helpers
+(defpackage barghest/helpers
   (:use :cl)
   (:export #:render
            #:redirect
@@ -7,7 +7,7 @@
            #:forbidden
            #:get-next-url))
 
-(in-package barghest-helpers)
+(in-package barghest/helpers)
 
 (defun set-status-code (status-code)
   (setf (lack.response:response-status ningle:*response*)

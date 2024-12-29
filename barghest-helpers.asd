@@ -1,4 +1,4 @@
-(defsystem "barghest-helpers"
+(defsystem "barghest/helpers"
   :version "0.0.1"
   :author "nmunro"
   :license "BSD3-Clause"
@@ -7,15 +7,15 @@
   :components ((:module "src"
                 :components
                 ((:file "main"))))
-  :in-order-to ((test-op (test-op "barghest-helpers/tests"))))
+  :in-order-to ((test-op (test-op "barghest/helpers/tests"))))
 
-(defsystem "barghest-helpers/tests"
+(defsystem "barghest/helpers/tests"
   :author "nmunro"
   :license "BSD3-Clause"
-  :depends-on ("barghest-helpers"
+  :depends-on ("barghest/helpers"
                :rove)
   :components ((:module "tests"
                 :components
                 ((:file "main"))))
-  :description "Test system for barghest-helpers"
+  :description "Test system for barghest/helpers"
   :perform (test-op (op c) (symbol-call :rove :run c)))
