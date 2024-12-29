@@ -3,7 +3,7 @@
   :author "nmunro"
   :license "BSD3-Clause"
   :description ""
-  :depends-on ()
+  :depends-on (:djula)
   :components ((:module "src"
                 :components
                 ((:file "main"))))
